@@ -1,0 +1,36 @@
+<!-- 詳細ページ -->
+
+<!-- 一覧に飛ぶ -->
+<p class="show_index"><%= link_to "← 一覧に戻る", posts_path, class: "show_index_text" %></p>
+
+<!-- タイトル名 -->
+<p class="show_title_name"><%= @post.title %></p>
+
+<!-- 編集ボタン -->
+<li class="show_edit">
+        <%= link_to edit_post_path do%> <!-- users/editへ飛ぶ -->
+        <%= image_tag "icon_pencil.png", class:"icon_pencil"%><p class="show_edit_text">編集</p>
+        <% end %>
+</li>
+<!-- 背景 -->
+<div class="show_table_flame">
+    <!-- 表 -->
+    <table class="show_table">
+        <tr class="show_table_tr">
+            <th class="show_table_th">開始日</th>
+            <td class="show_table_td"><%= l @post.start_date, format: :short %></td>
+        </tr>
+        <tr class="show_table_tr">
+            <th class="show_table_th">終了日</th>
+            <td class="show_table_td"><%= l @post.end_date, format: :short %></td>
+        </tr>
+        <tr class="show_table_tr">
+            <th class="show_table_th">終日</th>
+            <td class="show_table_td"><%= @post.allday ? "○":" "  %></td> <!-- 入力されているなら○、されていないなら空白 -->
+        </tr>
+        <tr class="show_table_tr">
+            <th class="show_table_th">スケジュールメモ</th>
+            <td class="show_table_td"><%= @post.memo %></td>
+        </tr>
+    </table>
+</div>

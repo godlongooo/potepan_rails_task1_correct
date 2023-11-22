@@ -1,0 +1,112 @@
+.new_head{
+    font-size: 20px;
+    margin: 50px 0px 20px 400px;
+    color: black;
+}
+
+/* 背景 */
+.new_flame{ 
+    width: 650px;
+	height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba(0,0,0,.02), 0 1px 3px rgba(50,50,93,.15);
+    margin: auto;
+    padding: 20px;
+}
+
+/* エラーメッセージ */
+.new_error{
+    color: red;
+    font-size: 9px;
+}
+
+/* タイトル */
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+}
+
+.new_title_text{
+    font-weight: bold;
+}
+
+/* 日時 */
+input[type="date"]{
+    width: 100%;
+    height: 40px;
+}
+
+
+/* 開始日 */
+.new_start{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.new_start_text{
+    font-weight: bold;
+}
+
+
+/* 終了日 */
+.new_end{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin: 0px 0px 0px 110px;
+}
+
+.new_end_text{
+    font-weight: bold;
+}
+
+/* 終日 */
+.new_allday_form{
+    margin: 25px 0px;
+}
+
+/* メモ */
+.new_memo_text{
+    font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+}
+
+/* キャンセルボタン */
+.new_cancel {
+    background-color: #fff;
+    color: black;
+    border: solid;
+    border-color: #e0e0e0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 0px 50px 0px 450px;
+    text-decoration: none;
+}
+
+/* 保存ボタン */
+.new_save {
+    background-color: #2962ff;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 5px;
+    padding:8px 12px;
+    margin: 0px 400px 0px 0px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+}
