@@ -1,0 +1,47 @@
+<!-- 編集ページ -->
+<h1 class="edit_head">予定を編集してください</h1>
+
+<!-- 作成後情報を持っていなければcreateアクション、持っていればupdateアクションへ -->
+<%= form_with model: @post do |f| %>
+<!-- 背景 -->
+    <div class="edit_flame">
+        <div class="edit_title">
+            <p class="edit_title_text"><%= f.label :title ,"タイトル" %></p>
+            <p class="edit_title_form"><%= f.text_field :title %></p>
+            <% if @post.errors.include?(:title) %>
+            <p class="edit_error"><%= @post.errors.full_messages_for(:title).first %></p>
+            <% end %>
+        <!-- 開始日 -->
+        <div class="edit_start">
+            <p class="edit_start_text"><%= f.label :start_date ,"開始日" %></p>
+            <p class="edit_start_form"><%= f.date_field :start_date %></p>
+            <% if @post.errors.include?(:start_date) %>
+            <p class="edit_error"><%= @post.errors.full_messages_for(:start_date).first %></p>
+            <% end %>
+        </div>
+        <!-- 終了日 -->
+        <div class="edit_end">
+            <p class="edit_end_text"><%= f.label :end_date ,"終了日" %></p>
+            <p class="edit_end_form"><%= f.date_field :end_date %></p>
+            <% if @post.errors.include?(:end_date) %>
+            <p class="edit_error"><%= @post.errors.full_messages_for(:end_date).first %></p>
+            <% end %>
+        </div>
+    </div>
+        <!-- 終日 -->
+        <p class="edit_allday_form"><%= f.check_box :allday %> 終日の場合はチェックを入れます</p>
+
+        <!-- メモ -->
+        <p class="edit_memo_text"><%= f.label :memo ,"スケジュールメモ" %></p>
+        <p class="edit_memo_form"><%= f.text_area :memo %></p>
+
+        <!-- 送信 -->
+        <%= link_to "キャンセル", posts_path, class:"btn edit_cancel" %></li>
+        <%= f.submit " 保存 ", class:"edit_save" %>
+
+</div>
+
+<% end %>
+
+<!-- フラッシュメッセージ -->
+<div class="flash_message"><%= flash[:notice] %></div>

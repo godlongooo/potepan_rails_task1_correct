@@ -1,0 +1,81 @@
+/* 一覧リンク */
+.show_index{
+    list-style: none;
+    margin: 40px 0px 40px 400px;
+}
+
+/* ユーザー名 */
+.show_title_name{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 80px 420px;
+    display: inline-block;
+}
+
+.show_index_text{
+    color: blue;
+    text-decoration: none;
+}
+
+/* 編集ボタン */
+.show_edit{
+    display: inline-block;
+    border: solid;
+    border-color: #2962ff;
+    border-radius: 4px;
+    height: 20px;
+    padding: 10px 20px;
+    margin: 0px 400px 0px 0px;
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+
+.icon_pencil{
+    width: 15px;
+    height: 15px;
+}
+
+.show_edit_text{
+    background-color: #fff;
+    color: #2962ff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* table */
+.show_table_flame{ 
+    width: 600px;
+	height: 250px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba(0,0,0,.02), 0 1px 3px rgba(50,50,93,.15);
+    margin: auto;
+    padding: 20px;
+}
+
+.show_table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.show_table_tr{
+    border: solid;
+}
+
+.show_table_th{
+    background-color: gray;
+    padding: 20px;
+}
+
+.show_table_td{
+    padding: 20px 100px;
+    text-align: center;
+}
+
+
+

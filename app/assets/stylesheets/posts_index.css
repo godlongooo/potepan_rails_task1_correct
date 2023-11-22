@@ -1,0 +1,74 @@
+/* 予定一覧 */
+.index_head {
+  display: inline-block;
+  font-size: 20px;
+  margin: 50px 350px;
+  color: black;
+}
+
+/* 新規登録ボタン */
+.new_post_btn {
+  background-color: #2962ff;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 4px;
+  grid-gap: 8px;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  height: 20px;
+  line-height: 18px;
+  padding: 12px 20px;
+  margin: 30px 350px 0px 0px;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+}
+
+/* table */
+.index_table {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-color: #d3d3d3;
+  border-collapse: collapse;
+}
+
+.index_table_th {
+  background-color: white;
+  padding: 15px 20px;
+}
+
+.index_table_td {
+  background-color: #fff;
+  padding: 20px;
+  border-top: solid;
+  border-color: #d3d3d3;
+} 
+
+
+/* footer */
+.index_footer{
+  font-size: 18px;
+  margin: 50px 330px;
+  border: solid;
+  border-color: #d3d3d3;
+}
+
+.index_total{
+  display: inline-block;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.index_total_span {
+  font-size: 20px;
+}
+
+.today_view{
+  display: inline-block;
+  margin-left: 480px;
+  font-size: 12px;
+  opacity: 0.5;
+}
